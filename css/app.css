@@ -1,0 +1,28 @@
+.new-item {
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+
+.new-item:focus {
+	border-bottom: 2px solid green;
+}
+
+.action-delete {
+	float: right;
+	color: red;
+	cursor: pointer;
+}
+
+.edit-title{
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 2px solid green;
+	width: 100%;
+	margin-bottom: 8px;
+	margin-top: 20px;
+	font-size: 36px; 
+}

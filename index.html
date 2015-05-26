@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Swot</title>
+
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- app.css -->
+	<link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+
+	<div id="container">
+		
+		<board></board>
+
+	</div>
+
+	<!-- others scripts -->
+	<script src="js/local_storage.js"></script>
+	
+	<!-- views files -->
+	 <script src="tags/board.tag" type="riot/tag"></script>
+	 <script src="tags/item-list.tag" type="riot/tag"></script>
+
+	<!-- riotjs -->
+ 	<script src="https://cdn.jsdelivr.net/g/riot@2.0.14(riot.min.js+compiler.min.js)"></script>
+
+	<script>
+
+		// Get data from local storage
+		var boardTitle = storage.get('boardtitle', 'My board');
+		riot.mount('board', {boardTitle: boardTitle});
+
+	</script>
+
+</body>
+</html>
